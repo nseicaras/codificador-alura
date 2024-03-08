@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media-queria.css">
+    <title>Codificador Alura</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo-alura" >
+            <img src="./imagens/logo.png" alt="logo da Alura">
+        </div>
+    </header>
+    <main class="apresentacao">
+        <section class="caixa__primaria"> <!--SECTION 1-->
+            <textarea class="texto__crip" id="areaTexto" cols="40" rows="13" placeholder="Digite seu texto..." ></textarea>
+            <div class="aviso__paragrafo">
+                <img class="img__aviso" src="./imagens/simboloalerta.png" alt="sinal de exclamação pra simbolizar atenção">
+                <p>Apenas letras minúsculas e sem acento.</p>               
+            </div>
+            <div class="botoes__cripdescrip">
+                <button onclick="btnCriptografar()" class="botao__crip" id="botaoCriptografar">Criptografar</button>
+                <button onclick="btnDescriptografar()" class="botao__descrip" id="botaoDescriptografar">Descriptografar</button>
+            </div> 
+        </section>
+    
+        <section class="caixa__secundaria"> <!--SECTION 2-->
+            <div class="caixa__secundaria__descrip">
+                <img class="imagem__personagem" src="./imagens/personagem.png" alt="pessoa sentada e com uma lupa na mão">
+                <div class="caixa__secundaria__mensagem">
+                    <h2 class="titulo__area__copia">Nenhuma mensagem encontrada.</h2>
+                    <p class="paragrafo__area__copia">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </section>
+        <section class="caixa__terciaria"><!--SECTION 3-->
+            <div class="conteudo__area__copiar">
+                <textarea class="texto__descrip" id="areaCopia" cols="30" rows="25" readonly></textarea>
+                <button class="botao__copiar" onclick="btnCopiar()" id="botaoCopiar" >Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
