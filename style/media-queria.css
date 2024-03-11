@@ -75,8 +75,14 @@
         width: 100%;
         padding: 0% 5% 1% 5%;
     }
+    .botao__crip, .botao__descrip {
+        width: 80%;
+        height: 67px;
+    }
     .botao__copiar {
         margin: 0;
+        will-change: 100%;
+        height: 67px;
     }
     .botoes__cripdescrip {
         display: flex;
